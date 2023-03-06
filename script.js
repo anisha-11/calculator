@@ -14,12 +14,12 @@ class Calculator {
     this.currentOperand = this.currentOperand.toString().slice(0, -1)
   }
 
-  appendNumber() {
+  appendNumber(number) {
     if (number === '.' && this.currentOperand.includes('.')) return
     this.currentOperand = this.currentOperand.toString() + number.toString() 
   }
 
-  chooseOperation() {
+  chooseOperation(operation) {
     if (this.currentOperand === '') return
     if (this.previousOperand !== '') {
       this.compute()
@@ -103,4 +103,4 @@ deleteButton.addEventListener('click', button => {
   calculator.updateDisplay()
 })
 
-module.exports = Calculator;
+// module.exports = Calculator;
