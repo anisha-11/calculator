@@ -103,4 +103,4 @@ deleteButton.addEventListener('click', button => {
   calculator.updateDisplay()
 })
 
-// module.exports = Calculator;
+module.exports = Calculator();
